@@ -1,0 +1,7 @@
+document incoming socket payload for each exchange
+make sure every stream can handle mulitple subscriptions
+serializer/deserializer module
+publish transformer -> when socket message recieved transformer will parse message for publishing to kafka
+different market event struct for futures
+market event aggregator -> bundle single market event for each exchange into a single data type -> said datatype will hold the most recent marketevent for each exchange -> therefore we don't need to constantly poll from multiple topics, instead we just send that single object around
+function to aggregate a take/make with multiple trades/orders bitmex/ftx etc.
